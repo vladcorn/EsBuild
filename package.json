@@ -1,0 +1,29 @@
+{
+  "name": "esbuild_test",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node esbuild.config.js -w",
+    "build": "node esbuild.config.js"
+  },
+  "author": "Vlad Petrovich",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "esbuild": "^0.11.12",
+    "esbuild-plugin-alias": "^0.1.2",
+    "esbuild-sass-plugin": "^1.2.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.10",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.1"
+  },
+  "devDependencies": {
+    "esbuild-plugin-babel": "^0.2.3",
+    "esbuild-serve": "^1.0.1"
+  },
+  "browserslist": {
+  },
+}
