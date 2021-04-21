@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../js/app.js"],
-  "sourcesContent": ["import '../scss/main.scss';\n\nconst root = document.querySelector('#root');\nroot.innerHTML = '<h1>Hello world</h1>';\n"],
-  "mappings": "MAEA,GAAM,GAAO,SAAS,cAAc,SACpC,EAAK,UAAY",
-  "names": []
-}

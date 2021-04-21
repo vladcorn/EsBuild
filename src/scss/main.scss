@@ -1,13 +1,15 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 #root {
-    color: red;
+  color: blue;
+  display: flex;
+  margin-bottom: 20px;
 }
 div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
