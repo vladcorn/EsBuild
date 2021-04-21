@@ -1,9 +1,8 @@
-import esbuildServe from 'esbuild-serve';
 import { sassPlugin } from 'esbuild-sass-plugin';
-import alias from 'esbuild-plugin-alias';
 import postcss from 'postcss';
 import autoprefixer from 'autoprefixer';
 import postcssPresetEnv from 'postcss-preset-env';
+import esbuildServe from './esbuildServe.js';
 
 esbuildServe(
     {

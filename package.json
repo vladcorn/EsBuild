@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "",
-  "main": "index.js",
+  "main": "src/dist/index.js",
   "scripts": {
     "start": "node esbuild.config.js -w",
     "build": "node esbuild.config.js"
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.2.5",
+    "create-serve": "^1.0.1",
     "esbuild": "^0.11.12",
     "esbuild-plugin-alias": "^0.1.2",
     "esbuild-sass-plugin": "^1.2.0",
@@ -21,9 +22,13 @@
     "prettier": "^2.2.1"
   },
   "devDependencies": {
-    "esbuild-plugin-babel": "^0.2.3",
-    "esbuild-serve": "^1.0.1"
+    "chokidar": "^3.5.1",
+    "esbuild-plugin-babel": "^0.2.3"
   },
-  "browserslist": {
-  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "last 2 version",
+    "> 1%"
+  ]
 }
