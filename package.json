@@ -20,7 +20,7 @@
     "prettier": "^2.2.1"
   },
   "devDependencies": {
-    "chokidar": "^3.5.1",
+    "chokidar": "^3.5.1"
   },
   "browserslist": [
     "defaults",
