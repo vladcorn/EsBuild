@@ -20,8 +20,8 @@ const esbuildServe = async (options = {}, serveOptions = {}) => {
         log('Build success :)');
         process.exit(0);
       }
-    })
-    .catch(() => process.exit(1));
+    });
+  // .catch(() => process.exit(1));
 
   if (isWatch) {
     serve.start(serveOptions);
@@ -35,8 +35,8 @@ const esbuildServe = async (options = {}, serveOptions = {}) => {
         .then(() => {
           serve.update();
           log('✓ Updated');
-        })
-        .catch(() => process.exit(1));
+        });
+      // .catch(() => process.exit(1));
     });
   }
 };
