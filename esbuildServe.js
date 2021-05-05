@@ -20,14 +20,13 @@ const esbuildServe = async (options = {}, serveOptions = {}) => {
         log('Build success :)');
         process.exit(0);
       }
-    });
-  // .catch(() => process.exit(1));
+    })
+    .catch((e) => error(e));
 
   if (isWatch) {
     serve.start(serveOptions);
     const watcher = watch(['src/*.html', 'src/scss/*.scss']);
     watcher.on('change', () => {
-      console.log('FROM WhatHCER');
       esbuild
         .build({
           ...options,
@@ -35,8 +34,8 @@ const esbuildServe = async (options = {}, serveOptions = {}) => {
         .then(() => {
           serve.update();
           log('✓ Updated');
-        });
-      // .catch(() => process.exit(1));
+        })
+        .catch((e) => error(e));
     });
   }
 };
